@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+header, main, nav, section, article, aside, figure, footer, video, audio {
+  display: block; }
+
+body {
+  line-height: 1.4; }
+
+body {
+  background-color: #42413C;
+  font: 14px verdana, sans-serif;
+  color: #333; }
+
+main {
+  max-width: 960px;
+  margin: 0 auto; }
+
+h1, h2, p {
+  padding-right: 15px;
+  padding-left: 15px; }
+
+p {
+  padding-bottom: 10px; }
+
+.navHeader {
+  background-color: #7bb8a5;
+  border-bottom: 2px solid #42413C; }
+
+#navBrand {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  #navBrand figure {
+    padding-left: 20px; }
+  #navBrand img {
+    width: 50px;
+    padding-top: 20px; }
+  #navBrand span {
+    padding-left: 10px; }
+
+label {
+  padding-right: 40px; }
+
+nav ul {
+  list-style-type: none; }
+
+nav a {
+  color: #42413C;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+  text-decoration: none;
+  text-align: center; }
+  nav a:hover {
+    background-color: #9ed3c2; }
+
+#navigation nav {
+  height: 0;
+  overflow: hidden; }
+
+body {
+  -webkit-animation: bugfix infinite 1s; }
+
+#navigation input[type=checkbox] {
+  position: absolute;
+  top: -999em;
+  left: -999em; }
+
+#navigation label {
+  display: block;
+  background: url(../images/navTrigger.gif) no-repeat right center;
+  position: relative;
+  top: -33px;
+  right: 25px;
+  text-indent: -999em;
+  cursor: pointer;
+  user-select: none; }
+
+#navigation input[type=checkbox]:checked ~ nav {
+  height: auto;
+  overflow: hidden; }
+
+header {
+  background-color: #7bb8a5; }
+  header h1 {
+    font-family: "Freckle Face", cursive;
+    font-size: 62px;
+    text-align: center; }
+
+article {
+  background-color: #fff; }
+  article img {
+    max-width: 100%;
+    height: auto; }
+  article figcaption {
+    font-size: 10px;
+    font-style: italic;
+    color: #666;
+    text-align: center;
+    padding: 0 15px; }
+  article h1 {
+    font-family: "Freckle Face", cursive;
+    font-size: 36px; }
+  article h2 {
+    font-family: "Freckle Face", cursive;
+    font-size: 18px;
+    color: #0B486B; }
+
+aside {
+  background-color: #3B8686;
+  color: #fff;
+  padding: 10px 0; }
+  aside h1 {
+    font-family: "Freckle Face", cursive;
+    font-size: 24px;
+    border-bottom: solid 2px #fff; }
+  aside h2 {
+    font-family: "Freckle Face", cursive;
+    font-size: 21px; }
+
+footer {
+  text-align: center;
+  background-color: #7bb8a5; }
+  footer p {
+    padding: 10px 0; }
+
+@media screen and (min-width: 700px) {
+  .navHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px; }
+
+  #navBrand img {
+    padding-top: 0; }
+
+  #navigation label {
+    display: none; }
+
+  #navigation nav {
+    height: auto;
+    overflow: visible; }
+
+  nav ul {
+    display: flex;
+    text-align: right;
+    padding-top: 5px; }
+    nav ul li {
+      flex-direction: row; }
+      nav ul li a {
+        padding: 10px; }
+
+  .mainContent {
+    display: flex; }
+
+  article {
+    flex: 6; }
+    article figcaption {
+      text-align: right; }
+
+  aside {
+    flex: 3; }
+
+  .margin {
+    flex: 1; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,163 @@
+// SASS @imports
+// ==========================
+
+@import "0-global/global-dir"
+@import "2-base/base-dir"
+    
+// ------------------------ NAVIGATION HEADER
+
+.navHeader
+    background-color: $primaryColor
+    border-bottom: 2px solid $mainBackgroundColor
+
+#navBrand
+    display: flex
+    flex-direction: row
+    align-items: center
+    figure
+        padding-left: 20px
+    img
+        width: 50px
+        padding-top: 20px
+    span
+        padding-left: 10px
+    
+label
+    padding-right: 40px
+
+nav ul
+    list-style-type: none
+
+nav a
+    color: $mainBackgroundColor
+    padding-top: 10px
+    padding-bottom: 10px
+    display: block
+    text-decoration: none
+    text-align: center
+    &:hover
+        background-color: $hoverBackgroundColor
+
+// ------------------------ NAVIGATION TRIGGER
+
+#navigation nav
+    height: 0
+    overflow: hidden
+    
+body
+    -webkit-animation: bugfix infinite 1s
+    
+#navigation input[type=checkbox]
+    position: absolute
+    top: -999em
+    left: -999em
+    
+#navigation label
+    display: block
+    background: url(../images/navTrigger.gif) no-repeat right center
+    position: relative
+    top: -33px
+    right: 25px
+    text-indent: -999em
+    cursor: pointer
+    user-select: none
+    
+#navigation input[type=checkbox]:checked ~ nav
+    height: auto
+    overflow: hidden
+    
+// ------------------------ TEXT HEADER
+
+header
+    background-color: $primaryColor
+    h1
+        font-family: 'Freckle Face', cursive
+        font-size: 62px
+        text-align: center
+    
+
+// ------------------------ ARTICLE
+
+article
+    background-color: $tertiaryColor
+    img
+        max-width: 100%
+        height: auto
+    figcaption
+        font-size: 10px
+        font-style: italic
+        color: #666
+        text-align: center
+        padding: 0 15px
+    h1
+        font-family: 'Freckle Face', cursive
+        font-size: 36px
+    h2
+        font-family: 'Freckle Face', cursive
+        font-size: 18px
+        color: #0B486B
+    
+// ------------------------ ASIDE
+
+aside
+    background-color: $secondaryColor
+    color: $tertiaryColor
+    padding: 10px 0
+    h1
+        font-family: 'Freckle Face', cursive
+        font-size: 24px
+        border-bottom: solid 2px #fff
+    h2
+        font-family: 'Freckle Face', cursive
+        font-size: 21px
+    
+// ------------------------ FOOTER
+
+footer
+    text-align: center
+    background-color: $primaryColor
+    p
+        padding: 10px 0
+    
+// ------------------------ LARGE SCREENS
+
+@media screen and (min-width: 700px)
+    .navHeader
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        padding-top: 10px
+        padding-right: 10px
+        padding-bottom: 10px
+        padding-left: 5px
+    #navBrand img
+        padding-top: 0
+    #navigation label
+        display: none
+    #navigation nav
+        height: auto
+        overflow: visible
+    nav ul
+        display: flex
+        text-align: right
+        padding-top: 5px
+        li
+            flex-direction: row
+            a
+                padding: 10px
+    .mainContent
+        display: flex
+    article
+        flex: 6
+        figcaption
+            text-align: right
+    aside
+        flex: 3
+    .margin
+        flex: 1
+    
+    
+    
+    
+    
+    
